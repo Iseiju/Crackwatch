@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExpandedGameCell" id="gTV-IL-0wX" customClass="ExpandedGameCell" customModule="Crackwatch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="303"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="303"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXA-09-8xu">
+                        <rect key="frame" x="0.0" y="0.0" width="377" height="303"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEE-DM-Wry" customClass="MDCCard">
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="303"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KX0-r0-Ufr">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="230.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZq-Z4-rYY">
+                                        <rect key="frame" x="0.0" y="230.5" width="377" height="5"/>
+                                        <color key="backgroundColor" name="cracked"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="QfC-7u-VYg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4XM-Yx-hPz">
+                                        <rect key="frame" x="0.0" y="235.5" width="377" height="67.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-Ic-02e">
+                                                <rect key="frame" x="12" y="12" width="353" height="19.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKc-Ih-o36">
+                                                <rect key="frame" x="0.0" y="31.5" width="377" height="36"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-cracked" translatesAutoresizingMaskIntoConstraints="NO" id="plB-oI-CTl">
+                                                        <rect key="frame" x="12" y="4" width="20" height="20"/>
+                                                        <color key="tintColor" name="cracked"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="SmB-rX-Ep3"/>
+                                                            <constraint firstAttribute="height" constant="20" id="sU5-G4-rdl"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-Mb-Ck7">
+                                                        <rect key="frame" x="36" y="5.5" width="329" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" name="cracked"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="plB-oI-CTl" firstAttribute="leading" secondItem="mKc-Ih-o36" secondAttribute="leading" constant="12" id="AfK-H8-gen"/>
+                                                    <constraint firstItem="plB-oI-CTl" firstAttribute="top" secondItem="mKc-Ih-o36" secondAttribute="top" constant="4" id="K6f-HU-4Db"/>
+                                                    <constraint firstAttribute="bottom" secondItem="plB-oI-CTl" secondAttribute="bottom" constant="12" id="Noc-Z2-QQL"/>
+                                                    <constraint firstItem="zWX-Mb-Ck7" firstAttribute="centerY" secondItem="mKc-Ih-o36" secondAttribute="centerY" constant="-4" id="beE-Gk-hc6"/>
+                                                    <constraint firstItem="zWX-Mb-Ck7" firstAttribute="leading" secondItem="plB-oI-CTl" secondAttribute="trailing" constant="4" id="jEf-P2-uoc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zWX-Mb-Ck7" secondAttribute="trailing" constant="12" id="vhh-6f-32s"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mKc-Ih-o36" secondAttribute="trailing" id="7wk-UG-aUK"/>
+                                            <constraint firstItem="xnh-Ic-02e" firstAttribute="top" secondItem="4XM-Yx-hPz" secondAttribute="top" constant="12" id="9Jo-Wd-6jy"/>
+                                            <constraint firstItem="xnh-Ic-02e" firstAttribute="leading" secondItem="4XM-Yx-hPz" secondAttribute="leading" constant="12" id="DF2-8q-rFR"/>
+                                            <constraint firstAttribute="bottom" secondItem="mKc-Ih-o36" secondAttribute="bottom" id="MCq-ZN-UYy"/>
+                                            <constraint firstAttribute="trailing" secondItem="xnh-Ic-02e" secondAttribute="trailing" constant="12" id="XbT-Bw-ANy"/>
+                                            <constraint firstItem="mKc-Ih-o36" firstAttribute="top" secondItem="xnh-Ic-02e" secondAttribute="bottom" id="qFh-Zl-SZO"/>
+                                            <constraint firstItem="mKc-Ih-o36" firstAttribute="leading" secondItem="4XM-Yx-hPz" secondAttribute="leading" id="wun-m8-v6Q"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-LS-JZ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="303"/>
+                                        <connections>
+                                            <action selector="didTapGame:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5YE-fP-g1q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="KX0-r0-Ufr" firstAttribute="top" secondItem="PEE-DM-Wry" secondAttribute="top" id="1p6-Oy-W6D"/>
+                                    <constraint firstAttribute="trailing" secondItem="gZq-Z4-rYY" secondAttribute="trailing" id="34r-tK-vwm"/>
+                                    <constraint firstAttribute="bottom" secondItem="4XM-Yx-hPz" secondAttribute="bottom" id="5sF-Fl-GF7"/>
+                                    <constraint firstAttribute="trailing" secondItem="4XM-Yx-hPz" secondAttribute="trailing" id="AG4-tY-qhj"/>
+                                    <constraint firstItem="i3q-LS-JZ3" firstAttribute="leading" secondItem="PEE-DM-Wry" secondAttribute="leading" id="DkB-A1-P8A"/>
+                                    <constraint firstItem="KX0-r0-Ufr" firstAttribute="leading" secondItem="PEE-DM-Wry" secondAttribute="leading" id="FF6-1T-7pw"/>
+                                    <constraint firstItem="4XM-Yx-hPz" firstAttribute="leading" secondItem="PEE-DM-Wry" secondAttribute="leading" id="Fud-ni-bk9"/>
+                                    <constraint firstAttribute="bottom" secondItem="i3q-LS-JZ3" secondAttribute="bottom" id="H58-bU-4OI"/>
+                                    <constraint firstItem="4XM-Yx-hPz" firstAttribute="top" secondItem="gZq-Z4-rYY" secondAttribute="bottom" id="JhN-Ao-d5f"/>
+                                    <constraint firstAttribute="trailing" secondItem="KX0-r0-Ufr" secondAttribute="trailing" id="JmG-vI-jB2"/>
+                                    <constraint firstItem="gZq-Z4-rYY" firstAttribute="leading" secondItem="PEE-DM-Wry" secondAttribute="leading" id="KEW-gH-HJK"/>
+                                    <constraint firstAttribute="trailing" secondItem="i3q-LS-JZ3" secondAttribute="trailing" id="Mvk-r2-nKm"/>
+                                    <constraint firstItem="i3q-LS-JZ3" firstAttribute="top" secondItem="PEE-DM-Wry" secondAttribute="top" id="OhH-hV-v7R"/>
+                                    <constraint firstItem="gZq-Z4-rYY" firstAttribute="top" secondItem="KX0-r0-Ufr" secondAttribute="bottom" id="fNo-Di-vYU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PEE-DM-Wry" firstAttribute="top" secondItem="LXA-09-8xu" secondAttribute="top" id="0sG-7q-x9e"/>
+                            <constraint firstAttribute="trailing" secondItem="PEE-DM-Wry" secondAttribute="trailing" id="Fcl-IX-ecP"/>
+                            <constraint firstItem="PEE-DM-Wry" firstAttribute="leading" secondItem="LXA-09-8xu" secondAttribute="leading" id="Kve-Ra-SlP"/>
+                            <constraint firstAttribute="bottom" secondItem="PEE-DM-Wry" secondAttribute="bottom" id="ncs-4s-oST"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LXA-09-8xu" secondAttribute="bottom" id="Mgq-Ej-L8M"/>
+                <constraint firstAttribute="trailing" secondItem="LXA-09-8xu" secondAttribute="trailing" id="VYM-PF-6M9"/>
+                <constraint firstItem="LXA-09-8xu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YA7-z0-GVh"/>
+                <constraint firstItem="LXA-09-8xu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x3U-6X-saA"/>
+            </constraints>
+            <size key="customSize" width="377" height="303"/>
+            <connections>
+                <outlet property="cardView" destination="PEE-DM-Wry" id="Zrf-kw-U97"/>
+                <outlet property="daysToCrackLabel" destination="zWX-Mb-Ck7" id="y0t-Ry-SAu"/>
+                <outlet property="posterImageView" destination="KX0-r0-Ufr" id="I4s-Mh-btr"/>
+                <outlet property="titleLabel" destination="xnh-Ic-02e" id="HdJ-1t-nVb"/>
+            </connections>
+            <point key="canvasLocation" x="219.56521739130437" y="63.950892857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic-cracked" width="48" height="48"/>
+        <namedColor name="cracked">
+            <color red="0.0" green="0.88599997758865356" blue="0.019999999552965164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

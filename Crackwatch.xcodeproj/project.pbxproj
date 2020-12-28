@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20AD7BA244E951F0BAE394CF /* Pods_CrackwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F02AA2F06AF12D1E69497F /* Pods_CrackwatchTests.framework */; };
+		935FF1F41F9B6937D8B380D1 /* Pods_Crackwatch_CrackwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7D4D895D2DBFA1C7146C9B /* Pods_Crackwatch_CrackwatchUITests.framework */; };
+		E31C51FDE00DC92B4F2800B7 /* Pods_Crackwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211FA9FCBCAD20FD79254F26 /* Pods_Crackwatch.framework */; };
+		E80BD515256E60D90048DDCF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BD514256E60D90048DDCF /* Date.swift */; };
+		E80BD522256E72290048DDCF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BD521256E72290048DDCF /* String.swift */; };
+		E8334C8A255AB7E600342EDB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8334C89255AB7E600342EDB /* R.generated.swift */; };
+		E8334C8F255AB80D00342EDB /* GameListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8334C8E255AB80D00342EDB /* GameListController.swift */; };
+		E8334CA2255ACC7900342EDB /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8334CA0255ACC7900342EDB /* GameCell.swift */; };
+		E8334CA3255ACC7900342EDB /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8334CA1255ACC7900342EDB /* GameCell.xib */; };
+		E84B169A256F3BC30051DB79 /* GameInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84B1699256F3BC30051DB79 /* GameInfoViewModel.swift */; };
+		E85F1FB3255E166E006E3D69 /* GameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F1FB2255E166E006E3D69 /* GameListViewModel.swift */; };
+		E85F1FB8255E1735006E3D69 /* GameCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F1FB7255E1735006E3D69 /* GameCellViewModel.swift */; };
+		E85F1FC0255E1CE5006E3D69 /* CollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F1FBF255E1CE5006E3D69 /* CollectionCellViewModel.swift */; };
+		E898378A255E075C009A5FF0 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8983788255E075C009A5FF0 /* HeaderCell.swift */; };
+		E898378B255E075C009A5FF0 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8983789255E075C009A5FF0 /* HeaderCell.xib */; };
+		E898379F255E1007009A5FF0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E898379E255E1007009A5FF0 /* Game.swift */; };
+		E8C5263B255BDFF400F03F04 /* GameInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5263A255BDFF400F03F04 /* GameInfoController.swift */; };
+		E8C52646255BE04200F03F04 /* GameInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C52645255BE04100F03F04 /* GameInfoCoordinator.swift */; };
+		E8CA4932255A6C8B00E74A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA4931255A6C8B00E74A11 /* AppDelegate.swift */; };
+		E8CA4939255A6C8B00E74A11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CA4937255A6C8B00E74A11 /* Main.storyboard */; };
+		E8CA493C255A6C8B00E74A11 /* Crackwatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8CA493A255A6C8B00E74A11 /* Crackwatch.xcdatamodeld */; };
+		E8CA493E255A6C8B00E74A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CA493D255A6C8B00E74A11 /* Assets.xcassets */; };
+		E8CA4941255A6C8B00E74A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CA493F255A6C8B00E74A11 /* LaunchScreen.storyboard */; };
+		E8CA494C255A6C8C00E74A11 /* CrackwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA494B255A6C8C00E74A11 /* CrackwatchTests.swift */; };
+		E8CA4957255A6C8C00E74A11 /* CrackwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA4956255A6C8C00E74A11 /* CrackwatchUITests.swift */; };
+		E8F97992255B57960031DC67 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F97990255B57960031DC67 /* CollectionCell.swift */; };
+		E8F97993255B57960031DC67 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F97991255B57960031DC67 /* CollectionCell.xib */; };
+		E8F97999255B5A330031DC67 /* ExpandedGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F97997255B5A330031DC67 /* ExpandedGameCell.swift */; };
+		E8F9799A255B5A330031DC67 /* ExpandedGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F97998255B5A330031DC67 /* ExpandedGameCell.xib */; };
+		E8F979BF255B687F0031DC67 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F979BE255B687F0031DC67 /* Landing.storyboard */; };
+		E8F979C4255B68CC0031DC67 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F979C3255B68CC0031DC67 /* LandingController.swift */; };
+		E8F979CA255B69100031DC67 /* GameListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F979C9255B69100031DC67 /* GameListCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8CA4948255A6C8C00E74A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8CA4926255A6C8B00E74A11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8CA492D255A6C8B00E74A11;
+			remoteInfo = Crackwatch;
+		};
+		E8CA4953255A6C8C00E74A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8CA4926255A6C8B00E74A11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8CA492D255A6C8B00E74A11;
+			remoteInfo = Crackwatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		114AB6BE85372BBD816CD8CD /* Pods-CrackwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrackwatchTests.release.xcconfig"; path = "Target Support Files/Pods-CrackwatchTests/Pods-CrackwatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F15ED7D880F3A64F9F50354 /* Pods-CrackwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrackwatchTests.debug.xcconfig"; path = "Target Support Files/Pods-CrackwatchTests/Pods-CrackwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		211FA9FCBCAD20FD79254F26 /* Pods_Crackwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crackwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32474DBB9B5B9586A4DFFE07 /* Pods-Crackwatch-CrackwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crackwatch-CrackwatchUITests.release.xcconfig"; path = "Target Support Files/Pods-Crackwatch-CrackwatchUITests/Pods-Crackwatch-CrackwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70FF19712FCC70D0D6A23053 /* Pods-Crackwatch-CrackwatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crackwatch-CrackwatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-Crackwatch-CrackwatchUITests/Pods-Crackwatch-CrackwatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CF38534E67D663464B43039 /* Pods-Crackwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crackwatch.release.xcconfig"; path = "Target Support Files/Pods-Crackwatch/Pods-Crackwatch.release.xcconfig"; sourceTree = "<group>"; };
+		860582E604CA498FB29A6CE1 /* Pods-Crackwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crackwatch.debug.xcconfig"; path = "Target Support Files/Pods-Crackwatch/Pods-Crackwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		C4F02AA2F06AF12D1E69497F /* Pods_CrackwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrackwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7D4D895D2DBFA1C7146C9B /* Pods_Crackwatch_CrackwatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crackwatch_CrackwatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80BD514256E60D90048DDCF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		E80BD521256E72290048DDCF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E8334C89255AB7E600342EDB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		E8334C8E255AB80D00342EDB /* GameListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListController.swift; sourceTree = "<group>"; };
+		E8334CA0255ACC7900342EDB /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		E8334CA1255ACC7900342EDB /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		E84B1699256F3BC30051DB79 /* GameInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoViewModel.swift; sourceTree = "<group>"; };
+		E85F1FB2255E166E006E3D69 /* GameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewModel.swift; sourceTree = "<group>"; };
+		E85F1FB7255E1735006E3D69 /* GameCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCellViewModel.swift; sourceTree = "<group>"; };
+		E85F1FBF255E1CE5006E3D69 /* CollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellViewModel.swift; sourceTree = "<group>"; };
+		E8983788255E075C009A5FF0 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		E8983789255E075C009A5FF0 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		E898379E255E1007009A5FF0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E8C5263A255BDFF400F03F04 /* GameInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoController.swift; sourceTree = "<group>"; };
+		E8C52645255BE04100F03F04 /* GameInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoCoordinator.swift; sourceTree = "<group>"; };
+		E8CA492E255A6C8B00E74A11 /* Crackwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crackwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CA4931255A6C8B00E74A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8CA4938255A6C8B00E74A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8CA493B255A6C8B00E74A11 /* Crackwatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crackwatch.xcdatamodel; sourceTree = "<group>"; };
+		E8CA493D255A6C8B00E74A11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8CA4940255A6C8B00E74A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8CA4942255A6C8B00E74A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CA4947255A6C8C00E74A11 /* CrackwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrackwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CA494B255A6C8C00E74A11 /* CrackwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrackwatchTests.swift; sourceTree = "<group>"; };
+		E8CA494D255A6C8C00E74A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CA4952255A6C8C00E74A11 /* CrackwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrackwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CA4956255A6C8C00E74A11 /* CrackwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrackwatchUITests.swift; sourceTree = "<group>"; };
+		E8CA4958255A6C8C00E74A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F97990255B57960031DC67 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		E8F97991255B57960031DC67 /* CollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		E8F97997255B5A330031DC67 /* ExpandedGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedGameCell.swift; sourceTree = "<group>"; };
+		E8F97998255B5A330031DC67 /* ExpandedGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandedGameCell.xib; sourceTree = "<group>"; };
+		E8F979BE255B687F0031DC67 /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		E8F979C3255B68CC0031DC67 /* LandingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
+		E8F979C9255B69100031DC67 /* GameListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8CA492B255A6C8B00E74A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31C51FDE00DC92B4F2800B7 /* Pods_Crackwatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CA4944255A6C8C00E74A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AD7BA244E951F0BAE394CF /* Pods_CrackwatchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CA494F255A6C8C00E74A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935FF1F41F9B6937D8B380D1 /* Pods_Crackwatch_CrackwatchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A76C5A37D5A41B9FC71416D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				860582E604CA498FB29A6CE1 /* Pods-Crackwatch.debug.xcconfig */,
+				7CF38534E67D663464B43039 /* Pods-Crackwatch.release.xcconfig */,
+				70FF19712FCC70D0D6A23053 /* Pods-Crackwatch-CrackwatchUITests.debug.xcconfig */,
+				32474DBB9B5B9586A4DFFE07 /* Pods-Crackwatch-CrackwatchUITests.release.xcconfig */,
+				1F15ED7D880F3A64F9F50354 /* Pods-CrackwatchTests.debug.xcconfig */,
+				114AB6BE85372BBD816CD8CD /* Pods-CrackwatchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7B9E49076471B2A61B77CFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				211FA9FCBCAD20FD79254F26 /* Pods_Crackwatch.framework */,
+				CF7D4D895D2DBFA1C7146C9B /* Pods_Crackwatch_CrackwatchUITests.framework */,
+				C4F02AA2F06AF12D1E69497F /* Pods_CrackwatchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E80BD513256E60CB0048DDCF /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E80BD514256E60D90048DDCF /* Date.swift */,
+				E80BD521256E72290048DDCF /* String.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		E8CA4925255A6C8B00E74A11 = {
+			isa = PBXGroup;
+			children = (
+				E8CA4930255A6C8B00E74A11 /* Crackwatch */,
+				E8CA494A255A6C8C00E74A11 /* CrackwatchTests */,
+				E8CA4955255A6C8C00E74A11 /* CrackwatchUITests */,
+				E8CA492F255A6C8B00E74A11 /* Products */,
+				A76C5A37D5A41B9FC71416D9 /* Pods */,
+				E7B9E49076471B2A61B77CFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8CA492F255A6C8B00E74A11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8CA492E255A6C8B00E74A11 /* Crackwatch.app */,
+				E8CA4947255A6C8C00E74A11 /* CrackwatchTests.xctest */,
+				E8CA4952255A6C8C00E74A11 /* CrackwatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8CA4930255A6C8B00E74A11 /* Crackwatch */ = {
+			isa = PBXGroup;
+			children = (
+				E8F3029D255A87A300D12335 /* assets */,
+				E8F30298255A876900D12335 /* cells */,
+				E8F3029B255A878000D12335 /* controllers */,
+				E8F979C8255B69000031DC67 /* coordinators */,
+				E80BD513256E60CB0048DDCF /* extensions */,
+				E8F3029A255A877500D12335 /* models */,
+				E8F30299255A876D00D12335 /* viewmodels */,
+				E8F3029C255A878400D12335 /* storyboards */,
+				E8F30297255A86D600D12335 /* utilities */,
+				E8CA4931255A6C8B00E74A11 /* AppDelegate.swift */,
+				E8CA4942255A6C8B00E74A11 /* Info.plist */,
+				E8CA493A255A6C8B00E74A11 /* Crackwatch.xcdatamodeld */,
+			);
+			path = Crackwatch;
+			sourceTree = "<group>";
+		};
+		E8CA494A255A6C8C00E74A11 /* CrackwatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8CA494B255A6C8C00E74A11 /* CrackwatchTests.swift */,
+				E8CA494D255A6C8C00E74A11 /* Info.plist */,
+			);
+			path = CrackwatchTests;
+			sourceTree = "<group>";
+		};
+		E8CA4955255A6C8C00E74A11 /* CrackwatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8CA4956255A6C8C00E74A11 /* CrackwatchUITests.swift */,
+				E8CA4958255A6C8C00E74A11 /* Info.plist */,
+			);
+			path = CrackwatchUITests;
+			sourceTree = "<group>";
+		};
+		E8F30297255A86D600D12335 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E8334C89255AB7E600342EDB /* R.generated.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		E8F30298255A876900D12335 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				E8F97990255B57960031DC67 /* CollectionCell.swift */,
+				E8F97991255B57960031DC67 /* CollectionCell.xib */,
+				E8F97997255B5A330031DC67 /* ExpandedGameCell.swift */,
+				E8F97998255B5A330031DC67 /* ExpandedGameCell.xib */,
+				E8983788255E075C009A5FF0 /* HeaderCell.swift */,
+				E8983789255E075C009A5FF0 /* HeaderCell.xib */,
+				E8334CA0255ACC7900342EDB /* GameCell.swift */,
+				E8334CA1255ACC7900342EDB /* GameCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		E8F30299255A876D00D12335 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				E85F1FBF255E1CE5006E3D69 /* CollectionCellViewModel.swift */,
+				E85F1FB7255E1735006E3D69 /* GameCellViewModel.swift */,
+				E85F1FB2255E166E006E3D69 /* GameListViewModel.swift */,
+				E84B1699256F3BC30051DB79 /* GameInfoViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		E8F3029A255A877500D12335 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E898379E255E1007009A5FF0 /* Game.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E8F3029B255A878000D12335 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8C5263A255BDFF400F03F04 /* GameInfoController.swift */,
+				E8334C8E255AB80D00342EDB /* GameListController.swift */,
+				E8F979C3255B68CC0031DC67 /* LandingController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		E8F3029C255A878400D12335 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E8CA4937255A6C8B00E74A11 /* Main.storyboard */,
+				E8F979BE255B687F0031DC67 /* Landing.storyboard */,
+				E8CA493F255A6C8B00E74A11 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		E8F3029D255A87A300D12335 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E8CA493D255A6C8B00E74A11 /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		E8F979C8255B69000031DC67 /* coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E8F979C9255B69100031DC67 /* GameListCoordinator.swift */,
+				E8C52645255BE04100F03F04 /* GameInfoCoordinator.swift */,
+			);
+			path = coordinators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8CA492D255A6C8B00E74A11 /* Crackwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CA495B255A6C8C00E74A11 /* Build configuration list for PBXNativeTarget "Crackwatch" */;
+			buildPhases = (
+				D2268B2169BBF376469DF022 /* [CP] Check Pods Manifest.lock */,
+				E8F3028E255A866300D12335 /* ShellScript */,
+				E8CA492A255A6C8B00E74A11 /* Sources */,
+				E8CA492B255A6C8B00E74A11 /* Frameworks */,
+				E8CA492C255A6C8B00E74A11 /* Resources */,
+				8E8125E890CB7FA73397BDFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crackwatch;
+			productName = Crackwatch;
+			productReference = E8CA492E255A6C8B00E74A11 /* Crackwatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8CA4946255A6C8C00E74A11 /* CrackwatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CA495E255A6C8C00E74A11 /* Build configuration list for PBXNativeTarget "CrackwatchTests" */;
+			buildPhases = (
+				FAD64FBEC5A10723FDFE62DC /* [CP] Check Pods Manifest.lock */,
+				E8CA4943255A6C8C00E74A11 /* Sources */,
+				E8CA4944255A6C8C00E74A11 /* Frameworks */,
+				E8CA4945255A6C8C00E74A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8CA4949255A6C8C00E74A11 /* PBXTargetDependency */,
+			);
+			name = CrackwatchTests;
+			productName = CrackwatchTests;
+			productReference = E8CA4947255A6C8C00E74A11 /* CrackwatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8CA4951255A6C8C00E74A11 /* CrackwatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CA4961255A6C8C00E74A11 /* Build configuration list for PBXNativeTarget "CrackwatchUITests" */;
+			buildPhases = (
+				F9DECD72847DE623540564E1 /* [CP] Check Pods Manifest.lock */,
+				E8CA494E255A6C8C00E74A11 /* Sources */,
+				E8CA494F255A6C8C00E74A11 /* Frameworks */,
+				E8CA4950255A6C8C00E74A11 /* Resources */,
+				1EC66FDC863B1E6EAA5A5A97 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8CA4954255A6C8C00E74A11 /* PBXTargetDependency */,
+			);
+			name = CrackwatchUITests;
+			productName = CrackwatchUITests;
+			productReference = E8CA4952255A6C8C00E74A11 /* CrackwatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8CA4926255A6C8B00E74A11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E8CA492D255A6C8B00E74A11 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					E8CA4946255A6C8C00E74A11 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = E8CA492D255A6C8B00E74A11;
+					};
+					E8CA4951255A6C8C00E74A11 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = E8CA492D255A6C8B00E74A11;
+					};
+				};
+			};
+			buildConfigurationList = E8CA4929255A6C8B00E74A11 /* Build configuration list for PBXProject "Crackwatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8CA4925255A6C8B00E74A11;
+			productRefGroup = E8CA492F255A6C8B00E74A11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8CA492D255A6C8B00E74A11 /* Crackwatch */,
+				E8CA4946255A6C8C00E74A11 /* CrackwatchTests */,
+				E8CA4951255A6C8C00E74A11 /* CrackwatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8CA492C255A6C8B00E74A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E898378B255E075C009A5FF0 /* HeaderCell.xib in Resources */,
+				E8F9799A255B5A330031DC67 /* ExpandedGameCell.xib in Resources */,
+				E8F97993255B57960031DC67 /* CollectionCell.xib in Resources */,
+				E8CA4941255A6C8B00E74A11 /* LaunchScreen.storyboard in Resources */,
+				E8F979BF255B687F0031DC67 /* Landing.storyboard in Resources */,
+				E8CA493E255A6C8B00E74A11 /* Assets.xcassets in Resources */,
+				E8CA4939255A6C8B00E74A11 /* Main.storyboard in Resources */,
+				E8334CA3255ACC7900342EDB /* GameCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CA4945255A6C8C00E74A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CA4950255A6C8C00E74A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC66FDC863B1E6EAA5A5A97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crackwatch-CrackwatchUITests/Pods-Crackwatch-CrackwatchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crackwatch-CrackwatchUITests/Pods-Crackwatch-CrackwatchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crackwatch-CrackwatchUITests/Pods-Crackwatch-CrackwatchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E8125E890CB7FA73397BDFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crackwatch/Pods-Crackwatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crackwatch/Pods-Crackwatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crackwatch/Pods-Crackwatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2268B2169BBF376469DF022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crackwatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8F3028E255A866300D12335 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		F9DECD72847DE623540564E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crackwatch-CrackwatchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD64FBEC5A10723FDFE62DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrackwatchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8CA492A255A6C8B00E74A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85F1FC0255E1CE5006E3D69 /* CollectionCellViewModel.swift in Sources */,
+				E85F1FB3255E166E006E3D69 /* GameListViewModel.swift in Sources */,
+				E8334CA2255ACC7900342EDB /* GameCell.swift in Sources */,
+				E8CA4932255A6C8B00E74A11 /* AppDelegate.swift in Sources */,
+				E8CA493C255A6C8B00E74A11 /* Crackwatch.xcdatamodeld in Sources */,
+				E898379F255E1007009A5FF0 /* Game.swift in Sources */,
+				E80BD515256E60D90048DDCF /* Date.swift in Sources */,
+				E8C52646255BE04200F03F04 /* GameInfoCoordinator.swift in Sources */,
+				E898378A255E075C009A5FF0 /* HeaderCell.swift in Sources */,
+				E8F979C4255B68CC0031DC67 /* LandingController.swift in Sources */,
+				E8334C8A255AB7E600342EDB /* R.generated.swift in Sources */,
+				E8F97999255B5A330031DC67 /* ExpandedGameCell.swift in Sources */,
+				E84B169A256F3BC30051DB79 /* GameInfoViewModel.swift in Sources */,
+				E80BD522256E72290048DDCF /* String.swift in Sources */,
+				E8334C8F255AB80D00342EDB /* GameListController.swift in Sources */,
+				E8F979CA255B69100031DC67 /* GameListCoordinator.swift in Sources */,
+				E85F1FB8255E1735006E3D69 /* GameCellViewModel.swift in Sources */,
+				E8F97992255B57960031DC67 /* CollectionCell.swift in Sources */,
+				E8C5263B255BDFF400F03F04 /* GameInfoController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CA4943255A6C8C00E74A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CA494C255A6C8C00E74A11 /* CrackwatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CA494E255A6C8C00E74A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CA4957255A6C8C00E74A11 /* CrackwatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8CA4949255A6C8C00E74A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8CA492D255A6C8B00E74A11 /* Crackwatch */;
+			targetProxy = E8CA4948255A6C8C00E74A11 /* PBXContainerItemProxy */;
+		};
+		E8CA4954255A6C8C00E74A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8CA492D255A6C8B00E74A11 /* Crackwatch */;
+			targetProxy = E8CA4953255A6C8C00E74A11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8CA4937255A6C8B00E74A11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8CA4938255A6C8B00E74A11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8CA493F255A6C8B00E74A11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8CA4940255A6C8B00E74A11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8CA4959255A6C8C00E74A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8CA495A255A6C8C00E74A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8CA495C255A6C8C00E74A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860582E604CA498FB29A6CE1 /* Pods-Crackwatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3JSRJ7PCQ;
+				INFOPLIST_FILE = Crackwatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Iseiju.Crackwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8CA495D255A6C8C00E74A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF38534E67D663464B43039 /* Pods-Crackwatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3JSRJ7PCQ;
+				INFOPLIST_FILE = Crackwatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Iseiju.Crackwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8CA495F255A6C8C00E74A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F15ED7D880F3A64F9F50354 /* Pods-CrackwatchTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3JSRJ7PCQ;
+				INFOPLIST_FILE = CrackwatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dummy.CrackwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crackwatch.app/Crackwatch";
+			};
+			name = Debug;
+		};
+		E8CA4960255A6C8C00E74A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114AB6BE85372BBD816CD8CD /* Pods-CrackwatchTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3JSRJ7PCQ;
+				INFOPLIST_FILE = CrackwatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dummy.CrackwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crackwatch.app/Crackwatch";
+			};
+			name = Release;
+		};
+		E8CA4962255A6C8C00E74A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70FF19712FCC70D0D6A23053 /* Pods-Crackwatch-CrackwatchUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3JSRJ7PCQ;
+				INFOPLIST_FILE = CrackwatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dummy.CrackwatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crackwatch;
+			};
+			name = Debug;
+		};
+		E8CA4963255A6C8C00E74A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32474DBB9B5B9586A4DFFE07 /* Pods-Crackwatch-CrackwatchUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3JSRJ7PCQ;
+				INFOPLIST_FILE = CrackwatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dummy.CrackwatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crackwatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8CA4929255A6C8B00E74A11 /* Build configuration list for PBXProject "Crackwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CA4959255A6C8C00E74A11 /* Debug */,
+				E8CA495A255A6C8C00E74A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CA495B255A6C8C00E74A11 /* Build configuration list for PBXNativeTarget "Crackwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CA495C255A6C8C00E74A11 /* Debug */,
+				E8CA495D255A6C8C00E74A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CA495E255A6C8C00E74A11 /* Build configuration list for PBXNativeTarget "CrackwatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CA495F255A6C8C00E74A11 /* Debug */,
+				E8CA4960255A6C8C00E74A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CA4961255A6C8C00E74A11 /* Build configuration list for PBXNativeTarget "CrackwatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CA4962255A6C8C00E74A11 /* Debug */,
+				E8CA4963255A6C8C00E74A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E8CA493A255A6C8B00E74A11 /* Crackwatch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E8CA493B255A6C8B00E74A11 /* Crackwatch.xcdatamodel */,
+			);
+			currentVersion = E8CA493B255A6C8B00E74A11 /* Crackwatch.xcdatamodel */;
+			path = Crackwatch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E8CA4926255A6C8B00E74A11 /* Project object */;
+}
