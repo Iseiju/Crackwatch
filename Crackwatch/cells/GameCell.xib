@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="513" height="450"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1F-mV-t73" customClass="MDCCard">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1F-mV-t73" customClass="CardView" customModule="Crackwatch" customModuleProvider="target">
                         <rect key="frame" x="12" y="8" width="489" height="80"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QwZ-Q2-S9v">
@@ -99,7 +99,6 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="cardView" destination="U1F-mV-t73" id="GwQ-2X-2QR"/>
                 <outlet property="daysToCrackLabel" destination="ILp-as-c3s" id="2aG-aG-wrg"/>
                 <outlet property="posterImageView" destination="QwZ-Q2-S9v" id="oKt-Uo-11J"/>
                 <outlet property="statusImageView" destination="xNR-am-WuN" id="wuG-0g-sso"/>

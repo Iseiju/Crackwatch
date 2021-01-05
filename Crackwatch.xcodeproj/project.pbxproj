@@ -10,6 +10,7 @@
 		20AD7BA244E951F0BAE394CF /* Pods_CrackwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F02AA2F06AF12D1E69497F /* Pods_CrackwatchTests.framework */; };
 		935FF1F41F9B6937D8B380D1 /* Pods_Crackwatch_CrackwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7D4D895D2DBFA1C7146C9B /* Pods_Crackwatch_CrackwatchUITests.framework */; };
 		E31C51FDE00DC92B4F2800B7 /* Pods_Crackwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211FA9FCBCAD20FD79254F26 /* Pods_Crackwatch.framework */; };
+		E62F989325A445CB00D6CE1B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62F989225A445CB00D6CE1B /* CardView.swift */; };
 		E80BD515256E60D90048DDCF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BD514256E60D90048DDCF /* Date.swift */; };
 		E80BD522256E72290048DDCF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80BD521256E72290048DDCF /* String.swift */; };
 		E8334C8A255AB7E600342EDB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8334C89255AB7E600342EDB /* R.generated.swift */; };
@@ -68,6 +69,7 @@
 		860582E604CA498FB29A6CE1 /* Pods-Crackwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crackwatch.debug.xcconfig"; path = "Target Support Files/Pods-Crackwatch/Pods-Crackwatch.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F02AA2F06AF12D1E69497F /* Pods_CrackwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrackwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7D4D895D2DBFA1C7146C9B /* Pods_Crackwatch_CrackwatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crackwatch_CrackwatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E62F989225A445CB00D6CE1B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E80BD514256E60D90048DDCF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		E80BD521256E72290048DDCF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E8334C89255AB7E600342EDB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -146,6 +148,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E62F989725A445E500D6CE1B /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				E62F989825A445EB00D6CE1B /* views */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		E62F989825A445EB00D6CE1B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E62F989225A445CB00D6CE1B /* CardView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		E7B9E49076471B2A61B77CFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +208,7 @@
 		E8CA4930255A6C8B00E74A11 /* Crackwatch */ = {
 			isa = PBXGroup;
 			children = (
+				E62F989725A445E500D6CE1B /* custom */,
 				E8F3029D255A87A300D12335 /* assets */,
 				E8F30298255A876900D12335 /* cells */,
 				E8F3029B255A878000D12335 /* controllers */,
@@ -580,6 +599,7 @@
 				E8F97999255B5A330031DC67 /* ExpandedGameCell.swift in Sources */,
 				E84B169A256F3BC30051DB79 /* GameInfoViewModel.swift in Sources */,
 				E80BD522256E72290048DDCF /* String.swift in Sources */,
+				E62F989325A445CB00D6CE1B /* CardView.swift in Sources */,
 				E8334C8F255AB80D00342EDB /* GameListController.swift in Sources */,
 				E8F979CA255B69100031DC67 /* GameListCoordinator.swift in Sources */,
 				E85F1FB8255E1735006E3D69 /* GameCellViewModel.swift in Sources */,

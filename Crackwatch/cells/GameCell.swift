@@ -5,7 +5,6 @@
 //  Created by Kenneth James Uy on 11/10/20.
 //
 
-import MaterialComponents
 import UIKit
 
 protocol GameCellDelegate {
@@ -19,8 +18,6 @@ class GameCell: UITableViewCell {
 
   var cellViewModel: GameCellViewModelStrategy?
   
-  @IBOutlet weak var cardView: MDCCard!
-  
   @IBOutlet weak var statusView: UIView!
   
   @IBOutlet weak var posterImageView: UIImageView!
@@ -31,9 +28,6 @@ class GameCell: UITableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    
-    cardView.cornerRadius = 4.0
-    cardView.inkView.isHidden = true
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {

@@ -8,7 +8,6 @@ target 'Crackwatch' do
   # Pods for Crackwatch
   pod 'Alamofire', '~> 5.4.0'
   pod 'Kingfisher', '~> 5.15.7'
-  pod 'MaterialComponents/Cards', '~> 118.2.0'
   pod 'R.swift', '~> 5.2.2'
   
   post_install do |pi|

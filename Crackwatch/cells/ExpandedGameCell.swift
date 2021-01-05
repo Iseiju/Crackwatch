@@ -6,7 +6,6 @@
 //
 
 import Kingfisher
-import MaterialComponents
 import UIKit
 
 protocol ExpandedGameCellDelegate {
@@ -19,8 +18,6 @@ class ExpandedGameCell: UICollectionViewCell {
   var delegate: ExpandedGameCellDelegate?
   
   var cellViewModel: GameCellViewModelStrategy?
-
-  @IBOutlet weak var cardView: MDCCard!
   
   @IBOutlet weak var posterImageView: UIImageView!
   
@@ -29,9 +26,6 @@ class ExpandedGameCell: UICollectionViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    
-    cardView.cornerRadius = 4.0
-    cardView.inkView.isHidden = true
   }
   
   func set(_ cellViewModel: GameCellViewModelStrategy) {

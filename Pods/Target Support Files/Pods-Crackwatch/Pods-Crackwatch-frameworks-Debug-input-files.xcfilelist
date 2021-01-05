@@ -1,5 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Crackwatch/Pods-Crackwatch-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
-${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework
 ${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework

@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXA-09-8xu">
                         <rect key="frame" x="0.0" y="0.0" width="377" height="303"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEE-DM-Wry" customClass="MDCCard">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEE-DM-Wry" customClass="CardView" customModule="Crackwatch" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="377" height="303"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KX0-r0-Ufr">
@@ -130,7 +130,6 @@
             </constraints>
             <size key="customSize" width="377" height="303"/>
             <connections>
-                <outlet property="cardView" destination="PEE-DM-Wry" id="Zrf-kw-U97"/>
                 <outlet property="daysToCrackLabel" destination="zWX-Mb-Ck7" id="y0t-Ry-SAu"/>
                 <outlet property="posterImageView" destination="KX0-r0-Ufr" id="I4s-Mh-btr"/>
                 <outlet property="titleLabel" destination="xnh-Ic-02e" id="HdJ-1t-nVb"/>

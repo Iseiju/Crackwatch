@@ -3,42 +3,6 @@ PODS:
   - Kingfisher (5.15.7):
     - Kingfisher/Core (= 5.15.7)
   - Kingfisher/Core (5.15.7)
-  - MaterialComponents/AnimationTiming (118.2.0)
-  - MaterialComponents/Availability (118.2.0)
-  - MaterialComponents/Cards (118.2.0):
-    - MaterialComponents/Elevation
-    - MaterialComponents/Ink
-    - MaterialComponents/private/Icons/ic_check_circle
-    - MaterialComponents/private/Math
-    - MaterialComponents/Ripple
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Shapes
-  - MaterialComponents/Elevation (118.2.0):
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/Ink (118.2.0):
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/private/Color (118.2.0):
-    - MaterialComponents/Availability
-  - MaterialComponents/private/Icons/Base (118.2.0)
-  - MaterialComponents/private/Icons/ic_check_circle (118.2.0):
-    - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Math (118.2.0)
-  - MaterialComponents/Ripple (118.2.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/ShadowElevations (118.2.0)
-  - MaterialComponents/ShadowLayer (118.2.0):
-    - MaterialComponents/ShadowElevations
-  - MaterialComponents/Shapes (118.2.0):
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-    - MaterialComponents/ShadowLayer
   - R.swift (5.2.2):
     - R.swift.Library (~> 5.2.0)
   - R.swift.Library (5.2.0)
@@ -46,24 +10,21 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.4.0)
   - Kingfisher (~> 5.15.7)
-  - MaterialComponents/Cards (~> 118.2.0)
   - R.swift (~> 5.2.2)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
-    - MaterialComponents
     - R.swift
     - R.swift.Library
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
-  MaterialComponents: fc3dba46cf3ae8495728a875778b47d0c6ec7ed5
   R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
 
-PODFILE CHECKSUM: fa223a08e063f6befef3e9da599df2d136720258
+PODFILE CHECKSUM: 506f17a3bf3ddefdc3c5dee4408959410a9cdc0e
 
 COCOAPODS: 1.10.0
